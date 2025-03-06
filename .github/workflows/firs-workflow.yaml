@@ -6,12 +6,13 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
-    - name: welcome message
-      run:  echo "Welcome to GitHub Actions"
 
-    - name: list files
-      run: ls -ltrh
-    
-    - name: Read file
-      run: cat README.md
+    - name: List and read files
+      run: | 
+        echo "Welcome to GitHub Actions"
+        ls -ltrh
+        cat README.md
+
+    - name: Generate ASCII art
+      run: cowsay -f dragon "Run for cover, I am DRAGON.....RAWR" >> dragon.txt
+       
