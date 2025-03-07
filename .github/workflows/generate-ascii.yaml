@@ -10,13 +10,7 @@ jobs:
     - name: List Repo files
       run: ls -ltrh
     
-    - name: Verify asci-script.sh exists
-      run: test -f asci-script.sh && echo "File exists" || echo "File does not exist"
-      
-    - name: List files in the current directory
-      run: ls -ltrh
-    
     - name: Executing Shell script
       run: |
         chmod +x asci-script.sh 
-        ./asci-script.sh
+        ./Users/ahsankhan/Documents/Devops/github-actions/prcts/kkloud-coreconcepts-1/.github/workflows/asci-script.sh
