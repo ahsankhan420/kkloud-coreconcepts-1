@@ -13,4 +13,4 @@ jobs:
     - name: Executing Shell script
       run: |
         chmod +x asci-script.sh 
-        ./Users/ahsankhan/Documents/Devops/github-actions/prcts/kkloud-coreconcepts-1/.github/workflows/asci-script.sh
+        ./asci-script.sh
