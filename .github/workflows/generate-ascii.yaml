@@ -10,6 +10,9 @@ jobs:
     - name: List Repo files
       run: ls -ltrh
     
+    - name: Verify ascii-script.sh exists
+      run: test -f ascii-script.sh && echo "File exists" || echo "File does not exist"
+      
     - name: Executing Shell script
       run: |
         chmod +x ascii-script.sh 
